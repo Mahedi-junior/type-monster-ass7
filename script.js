@@ -63,6 +63,7 @@ const validate = (key) => {
 
 // FINISHED TYPING
 const gameOver = () => {
+
   document.removeEventListener("keydown", typeController);
   // the current time is the finish time
   // so total time taken is current time - start time
@@ -81,7 +82,7 @@ const gameOver = () => {
   resultModal.innerHTML += `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
-    <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p>You made <span class="bold red">${errorCount++}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
 
