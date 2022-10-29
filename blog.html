@@ -12,26 +12,42 @@
 <body>
     <section class="container">
         <h1 class="text-center mt-5">This is Blog Section</h1>
-        <div class="">
-            <div class="mt-5 border p-3">
-                <h5>1.difference between local storage and session storage</h5>
-                <p>Ans:localStorage and sessionStorage are almost the same.The one major difference between localStorage
-                    and sessionStorage is the expiration date. Both have the following rules:</p>
-                <ul>
-                    <li>They store key/value pairs for a particular domain.</li>
-                    <li>The values stored may only be strings.</li>
-                    <li>They have a limit of around 5MB of storage space.</li>
-                </ul>
-                <p><span class="fw-bolder">Local Storage: </span>persists the storage across browser sessions. So even
-                    if
-                    the domain is
-                    opened in a new tab, or the browser is closed and reopened, the storage is saved. There is no
-                    expiration.</p>
-                <p><span class="fw-bolder">Session Storage: </span> is cleared when the page session ends. A page
-                    session lasts as long as the tab or the browser is open. Therefore, when you open a new tab or a new
-                    window, this creates a new session and new storage.</p>
-            </div>
+
+        <div class="mt-5 border p-3">
+            <h5>1.difference between local storage and session storage</h5>
+            <p>Ans:localStorage and sessionStorage are almost the same.The one major difference between localStorage
+                and sessionStorage is the expiration date. Both have the following rules:</p>
+            <ul>
+                <li>They store key/value pairs for a particular domain.</li>
+                <li>The values stored may only be strings.</li>
+                <li>They have a limit of around 5MB of storage space.</li>
+            </ul>
+            <p>Local Storage // Local Storage persists the storage across browser sessions. So even
+                if
+                the domain is
+                opened in a new tab, or the browser is closed and reopened, the storage is saved. There is no
+                expiration.</p>
+            <p>Session Storage // Session Storage is cleared when the page session ends. A page
+                session lasts as long as the tab or the browser is open. Therefore, when you open a new tab or a new
+                window, this creates a new session and new storage.</p>
         </div>
+
+        <div class="mt-5 border p-3">
+            <h5>1.difference between Global scope vs Block scope</h5>
+            <p>Global Scope Variables declared Globally (outside any function) have Global Scope.
+
+                Global variables can be accessed from anywhere in a JavaScript program.
+
+                Variables declared with var, let and const are quite similar when declared outside a block</p>
+
+            <p>Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops,
+                are accessible within that particular condition or loop. To be consise the variables declared inside the
+                curly braces are called as within block scope</p>
+            <span>let & const are also called as block scope that is they are accessible within that particular
+                block.</span>
+
+        </div>
+
     </section>
 
 
